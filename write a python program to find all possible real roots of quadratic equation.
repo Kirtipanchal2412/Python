@@ -1,0 +1,15 @@
+a=int(input("Enter value for coefficient a:"))
+b=int(input("Enter value for coefficient b:"))
+c=int(input("Enter value for coefficient c:"))
+d=b*b*-4*a*c
+if d>0:
+  r1=(-b+a**(1/2))/(2*a)
+  r2=(-b-d**(1/2))/(2*a)
+  print("First real root:",r1)
+  print("Second real root:",r2)
+elif d==0:
+    r= -b/(2*a)
+    print("only root:",r)
+else:
+    print("No real root:")
+    
