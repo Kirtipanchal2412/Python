@@ -1,0 +1,12 @@
+a=int(input("Enter marks of first subject:"))
+b=int(input("Enter marks of second subject:"))
+c=int(input("Enter marks of third subject:"))
+d=int(input("Enter marks of fourth subject:"))
+n=a+b+c+d
+percentage= n/5
+if percentage>=60:
+    print("first division:")
+elif 33<percentage>59:
+    print("seconf division:")
+else:
+    print("fail:")
