@@ -1,0 +1,20 @@
+def power(x, n):
+    if n == 0:
+        return 1
+    elif n > 0:
+        return x * power(x, n - 1)
+    else:  # n is negative
+        return 1 / power(x, -n)
+
+def main():
+    try:
+        x = float(input("Enter the value of x: "))
+        n = int(input("Enter the value of n: "))
+
+        result = power(x, n)
+        print(f"{x} raised to the power {n} is: {result:.2f}")
+    except ValueError:
+        print("Invalid input. Please enter valid numeric values.")
+
+if __name__ == "__main__":
+    main()
