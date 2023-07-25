@@ -1,0 +1,10 @@
+def find_first_index(arr, x):
+    for index, element in enumerate(arr):
+        if element == x:
+            return index
+    return -1
+
+array = [1, 2, 3, 4, 5]
+x = 1
+result = find_first_index(array, x)
+print(result)
