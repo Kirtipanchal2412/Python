@@ -1,0 +1,9 @@
+def find_array_sum(arr):
+    array_sum = 0
+    for element in arr:
+        array_sum += element
+    return array_sum
+
+array = [1, 2, 3, 4, 5]
+result = find_array_sum(array)
+print(result) 
