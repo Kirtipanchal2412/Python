@@ -1,0 +1,9 @@
+def element_in_array(arr,x):
+    for element in arr:
+        if element==x:
+            return True
+    return False
+array=[2,4,8,6,17]
+x=17
+result= element_in_array(array,x)
+print(result)
